@@ -5,18 +5,17 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
 <style>
 
 .gallery  {
-  background-image: url("gallery.jpg");
+  background-image: url("gallery2.jpg");
   background-repeat:no-repeat;
   background-size:contain;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: 550px;
-  width: 70%;
+  margin: 0 auto;
+  width: 1000px;
   z-index: -1;
 }
 
@@ -26,40 +25,112 @@
   color: white;
   font-size: 20px;
   font-family: sans-serif;
-  border-radius: 8px;
-  padding: 20px;
   margin: 30px 20px;
-
-  width: 300px;
-height: 300px;
+  width: 150px;
+  height: 150px;
   /* This makes things *much* easier */
   box-sizing: border-box;
+  box-shadow: 5px 5px 5px #3d3d3d;
 }
 
 .resize-container {
-  width: 100px;
-  height: 500px;
+  position:absolute;
+
 }
+#title{
+  padding: 250px;
+  font-family: 'Pathway Gothic One', ;
+  font-size: 50px;
+  text-align: center;
+}
+#intro{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  text-align: justify;
+  font-family: 'Pathway Gothic One', ;
+}
+h2 {
+  font-family: 'Pathway Gothic One', ;
+  text-align: center;
+}
+
 </style>
 </head>
+
 <body>
+
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<section>
+<div id="title">Now Try The How And Why
+<img src="divider.jpg" class="center"></div>
+</section>
+<section>
+  <div id="intro">
+  <div class="container">    <h2>Introduction</h2> <br>
+    <div class="row">
+      <div class="col-lg">
+        <p>The Exhibition Now Try the How and Why [NTHW] challenges the history of curation by researching how interactive exhibitions result in the creation of diversity in art and education in art galleries.
 
-<div class="header"></div>
+The concept for the curation of this exhibition originated from the reading of Margaret Atwood's 1983 short story, Happy Endings. In this story, Atwood states that the most interesting part is the plot. This story inspired my exhibition’s format of the different meanings or results when creating, of which Atwood sums up in the last line of the story as “Now Try the How and Why” (Atwood 1983)
 
+This exhibition speaks to how narratives in fine arts are displayed, and the subjectivity of personal influence on curatorial themes and public perceptions of them. By encouraging observers to curate the placement of these artworks through the generation of narratives, this exhibition offers an alternative to typical visitor contributions and educational activities with its inclusion of an interactive technological aspect, and the opportunity for participants to explore the roles of a curator.
+</p>
+</div>
+  <div class="col-lg"><p>When asking viewers to participate and to comment on what they are seeing within the artworks and then coming up with a curatorial statement, I modelled this off the methods extracted from my study of interviews with educational staff from the Tate Britain. Their methods are to encourage people who are new to looking at art by seeing, decoding and reflecting: providing a guiding structure for people to analyze the works and create meaningful engagement with the artworks (Amaia and Aguirre). Because of the non-literal artwork chosen, there is an opening for observers to reflect on the artworks and what they envision the artworks to be thematically.
+
+Producing shows with more inclusivity, further outreach, educational programming and observer participation will expand the narrative on curating and visitor participation in galleries and institutions. NTHW explores improvements within gallery systems, creates a new model for education, and furthers space for visitors’ perspectives, updating curatorial roles and the reflection of the public’s knowledge of artwork.</div>
+    <p></div>
+      <img src="divider.jpg" class="center">
+  </div>
+</div>
+</section>
+<section>
 <div class="gallery"></div>
 
-<div class="resize-container">
-  <div class="resize-drag">
-
+<div class="img_gallery">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="resize-container">
+        <div class="resize-drag">
+      </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="resize-container">
+        <div class="resize-drag">
+      </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="resize-container">
+        <div class="resize-drag">
+      </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="resize-container">
+        <div class="resize-drag">
+      </div>
+      </div>
+    </div>
   </div>
 </div>
 
+</div>
+</section>
 <script>
 
 interact('.resize-drag')
@@ -107,7 +178,6 @@ function dragMoveListener (event) {
     target.setAttribute('data-y', y);
   }
 </script>
-
 
   </body>
 
