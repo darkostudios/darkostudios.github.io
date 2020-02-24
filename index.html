@@ -10,15 +10,13 @@
 <style>
 
 .gallery  {
-  background-image: url("gallery2.jpg");
-  background-repeat:no-repeat;
-  background-size:contain;
-  height: 550px;
   margin: 0 auto;
-  width: 1000px;
   z-index: -1;
 }
 
+.container{
+  touch-action: none;
+}
 .resize-drag {
   color: white;
   width: 150px;
@@ -91,7 +89,9 @@ Producing shows with more inclusivity, further outreach, educational programming
 </div>
 </section>
 <section>
-<div class="gallery"></div>
+<div class="gallery">
+<img src="gallery2.jpg" class="center" style="width:100%;">
+</div>
 
 <div class="img_gallery">
   <div class="container">
