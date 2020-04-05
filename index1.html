@@ -22,10 +22,11 @@
   color: white;
   width: 150px;
   height: 150px;
-  min-width: 150px;
-  min-height: 150px;
   box-sizing: border-box;
   box-shadow: 5px 5px 5px #3d3d3d;
+}
+
+.resize-drag {
   position:absolute;
 }
 
@@ -34,10 +35,6 @@
   font-family: 'Pathway Gothic One', ;
   font-size: 4vw;
   text-align: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #intro{
@@ -71,16 +68,16 @@ p {
 
 <body>
 
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <section>
   <div id="title">
-    <div id="wrapper">
       Now Try The How And Why
       <img src="divider.jpg" class="center img-responsive">
-    </div>
     </div>
 </section>
 
@@ -128,8 +125,6 @@ p {
     </div>
     <div class="resize-container">
       <img src="4.jpg" class="resize-drag">
-    </div>
-    <div class="resize-container">
     </div>
   </div>
 
