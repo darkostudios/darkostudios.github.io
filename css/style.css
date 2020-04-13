@@ -1,237 +1,879 @@
 
+.gallery  {
+margin: 0 auto;
+position: relative;
+}
+.gallery .btn1 {
+position: absolute;
+top: 90%;
+left: 79%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 16px;
+padding: 12px 24px;
+border: solid;
+border-color: white;
+color: white;
+background-color: Transparent;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.gallery .btn1:hover {
+background-color: #262626;
+color: white;
+}
+
+.gallery .btn2 {
+position: absolute;
+top: 90%;
+left: 90%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 16px;
+padding: 12px 24px;
+border: solid;
+border-color: white;
+color: white;
+background-color: Transparent;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.gallery .btn2:hover {
+background-color: #262626;
+color: white;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+color: #ff00b7;
+font-size: 40px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+background-color: white;
+color: #262626;
+display: flex;
+justify-content: space-between;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.resize-drag {
+color: white;
+width: 150px;
+height: 150px;
+min-width: 150px;
+min-height: 150px;
+box-sizing: border-box;
+box-shadow: 5px 5px 5px #3d3d3d;
+position:absolute;
+}
+
+#title{
+/*padding: 250px;*/
+font-family: 'Pathway Gothic One', ;
+font-size: 4vw;
+text-align: center;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#intro{
+font-family: 'Pathway Gothic One', ;
+font-size: 3vw;
+text-align: center;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+p {
+text-align: justify;
+font-family: 'Pathway Gothic One', ;
+}
+
+.img_gallery {
+  width: 100%;
+  touch-action: none;
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 500px;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.resize-container{
+padding: 5px;
+width: 150px;
+height: 150px;
+margin-top: 10px;
+margin-bottom:30px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
   .gallery  {
     margin: 0 auto;
-    z-index: -1;
+    position: relative;
+  }
+  .gallery .btn1 {
+    position: absolute;
+    top: 90%;
+    left:70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 5px;
+    padding: 6px 12px;
+    border: solid;
+    border-color: white;
+    color: white;
+    background-color: Transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
   }
 
-  .container{
-    touch-action: none;
+  .gallery .btn1:hover {
+    background-color: #262626;
+    color: white;
   }
+
+  .gallery .btn2 {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 5px;
+    padding: 6px 12px;
+    border: solid;
+    border-color: white;
+    color: white;
+    background-color: Transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .gallery .btn2:hover {
+    background-color: #262626;
+    color: white;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: #ff00b7;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    background-color: white;
+    color: #262626;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-body {padding: 2px 16px;}
 
   .resize-drag {
     color: white;
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px #3d3d3d;
-  }
-
-  .resize-container {
     position:absolute;
-
   }
+
   #title{
-    padding: 250px;
+    /*padding: 250px;*/
     font-family: 'Pathway Gothic One', ;
-    font-size: 1.5vmin;
+    font-size: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #intro{
+    font-family: 'Pathway Gothic One', ;
+    font-size: 3vw;
     text-align: center;
   }
-  #intro{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+
+#divider{
+  width:50%;
+}
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
   p {
     text-align: justify;
     font-family: 'Pathway Gothic One', ;
   }
-  h2 {
-    font-family: 'Pathway Gothic One', ;
-    text-align: center;
-  }}
+
+  .img_gallery {
+    width: 100%;
+    touch-action: none;
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 320px;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .resize-container{
+  padding: 5px;
+  width: 60px;
+  height:60px;
+  margin-top:10px;
+  margin-bottom:20px;
+  }
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
   .gallery  {
     margin: 0 auto;
-    z-index: -1;
+    position: relative;
   }
-
-  .container{
-    touch-action: none;
-  }
-  .resize-drag {
+  .gallery .btn1 {
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 12px;
+    padding: 6px 12px;
+    border: solid;
+    border-color: white;
     color: white;
-    width: 150px;
-    height: 150px;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 5px #3d3d3d;
-  }
-
-  .resize-container {
-    position:absolute;
-
-  }
-  #title{
-    padding: 250px;
-    font-family: 'Pathway Gothic One', ;
-    font-size: 50px;
+    background-color: Transparent;
+    cursor: pointer;
+    border-radius: 5px;
     text-align: center;
   }
+
+  .gallery .btn1:hover {
+    background-color: #262626;
+    color: white;
+  }
+
+  .gallery .btn2 {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 12px;
+    padding: 6px 12px;
+    border: solid;
+    border-color: white;
+    color: white;
+    background-color: Transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .gallery .btn2:hover {
+    background-color: #262626;
+    color: white;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: #ff00b7;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    background-color: white;
+    color: #262626;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-body {padding: 2px 16px;}
+
+  .resize-drag {
+    color: white;
+    width: 70px;
+    height: 70px;
+    min-width:70px;
+    min-height: 70px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #3d3d3d;
+    position:absolute;
+  }
+
+  #title{
+    /*padding: 250px;*/
+    font-family: 'Pathway Gothic One', ;
+    font-size: 4vw;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #intro{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    font-family: 'Pathway Gothic One', ;
+    font-size: 3vw;
+    text-align: center;
+  }
+  #divider{
+    width:50%;
   }
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
   p {
     text-align: justify;
     font-family: 'Pathway Gothic One', ;
   }
-  h2 {
-    font-family: 'Pathway Gothic One', ;
-    text-align: center;
-  }}
+
+  .img_gallery {
+    width: 100%;
+    touch-action: none;
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 320px;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .resize-container{
+  padding: 5px;
+  width: 80px;
+  height:80px;
+  margin-top:10px;
+  margin-bottom:30px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-  .gallery  {
-    margin: 0 auto;
-    z-index: -1;
-  }
+.gallery  {
+  margin: 0 auto;
+  position: relative;
+}
+.gallery .btn1 {
+  position: absolute;
+  top: 90%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 12px;
+  padding: 6px 12px;
+  border: solid;
+  border-color: white;
+  color: white;
+  background-color: Transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 
-  .container{
-    touch-action: none;
-  }
-  .resize-drag {
-    color: white;
-    width: 150px;
-    height: 150px;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 5px #3d3d3d;
-  }
+.gallery .btn1:hover {
+  background-color: #262626;
+  color: white;
+}
 
-  .resize-container {
-    position:absolute;
+.gallery .btn2 {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 12px;
+  padding: 6px 12px;
+  border: solid;
+  border-color: white;
+  color: white;
+  background-color: Transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 
-  }
-  #title{
-    padding: 250px;
-    font-family: 'Pathway Gothic One', ;
-    font-size: 50px;
-    text-align: center;
-  }
-  #intro{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  p {
-    text-align: justify;
-    font-family: 'Pathway Gothic One', ;
-  }
-  h2 {
-    font-family: 'Pathway Gothic One', ;
-    text-align: center;
-  }}
+.gallery .btn2:hover {
+  background-color: #262626;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #ff00b7;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: white;
+  color: #262626;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.resize-drag {
+  color: white;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px #3d3d3d;
+  position:absolute;
+}
+
+#title{
+  /*padding: 250px;*/
+  font-family: 'Pathway Gothic One', ;
+  font-size: 4vw;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro{
+  font-family: 'Pathway Gothic One', ;
+  font-size: 3vw;
+  text-align: center;
+}
+#divider{
+  width:50%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  text-align: justify;
+  font-family: 'Pathway Gothic One', ;
+}
+
+.img_gallery {
+  width: 100%;
+  touch-action: none;
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 320px;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.resize-container{
+padding: 5px;
+width: 110px;
+height:110px;
+margin-top:10px;
+margin-bottom:30px;
+}
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-  .gallery  {
-    margin: 0 auto;
-    z-index: -1;
-  }
-
-  .container{
-    touch-action: none;
-  }
-  .resize-drag {
-    color: white;
-    width: 150px;
-    height: 150px;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 5px #3d3d3d;
-  }
-
-  .resize-container {
-    position:absolute;
-
-  }
-  #title{
-    padding: 250px;
-    font-family: 'Pathway Gothic One', ;
-    font-size: 50px;
-    text-align: center;
-  }
-  #intro{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  p {
-    text-align: justify;
-    font-family: 'Pathway Gothic One', ;
-  }
-  h2 {
-    font-family: 'Pathway Gothic One', ;
-    text-align: center;
-  }
+.gallery  {
+margin: 0 auto;
+position: relative;
+}
+.gallery .btn1 {
+position: absolute;
+top: 90%;
+left: 79%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 16px;
+padding: 12px 24px;
+border: solid;
+border-color: white;
+color: white;
+background-color: Transparent;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+.gallery .btn1:hover {
+background-color: #262626;
+color: white;
+}
 
-  .gallery  {
-    margin: 0 auto;
-    z-index: -1;
-  }
+.gallery .btn2 {
+position: absolute;
+top: 90%;
+left: 90%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+font-size: 16px;
+padding: 12px 24px;
+border: solid;
+border-color: white;
+color: white;
+background-color: Transparent;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
 
-  .container{
-    touch-action: none;
-  }
-  .resize-drag {
-    color: white;
-    width: 150px;
-    height: 150px;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 5px #3d3d3d;
-  }
+.gallery .btn2:hover {
+background-color: #262626;
+color: white;
+}
 
-  .resize-container {
-    position:absolute;
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-  }
-  #title{
-    padding: 250px;
-    font-family: 'Pathway Gothic One', ;
-    font-size: 50px;
-    text-align: center;
-  }
-  #intro{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  p {
-    text-align: justify;
-    font-family: 'Pathway Gothic One', ;
-  }
-  h2 {
-    font-family: 'Pathway Gothic One', ;
-    text-align: center;
-  }}
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+color: #ff00b7;
+font-size: 40px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+background-color: white;
+color: #262626;
+display: flex;
+justify-content: space-between;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.resize-drag {
+color: white;
+width: 150px;
+height: 150px;
+min-width: 150px;
+min-height: 150px;
+box-sizing: border-box;
+box-shadow: 5px 5px 5px #3d3d3d;
+position:absolute;
+}
+
+#title{
+/*padding: 250px;*/
+font-family: 'Pathway Gothic One', ;
+font-size: 4vw;
+text-align: center;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#intro{
+font-family: 'Pathway Gothic One', ;
+font-size: 3vw;
+text-align: center;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+p {
+text-align: justify;
+font-family: 'Pathway Gothic One', ;
+}
+
+.img_gallery {
+  width: 100%;
+  touch-action: none;
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 500px;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.resize-container{
+padding: 5px;
+width: 150px;
+height: 150px;
+margin-top: 10px;
+margin-bottom:30px;
+}
+
+}

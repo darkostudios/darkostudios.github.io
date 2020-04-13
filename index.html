@@ -2,191 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+<link rel="stylesheet" href="css/style.css">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
-
-<style>
-.gallery  {
-  margin: 0 auto;
-  position: relative;
-}
-.gallery .btn1 {
-  position: absolute;
-  top: 90%;
-  left: 79%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 16px;
-  padding: 12px 24px;
-  border: solid;
-  border-color: white;
-  color: white;
-  background-color: Transparent;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.gallery .btn1:hover {
-  background-color: #262626;
-  color: white;
-}
-
-.gallery .btn2 {
-  position: absolute;
-  top: 90%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 16px;
-  padding: 12px 24px;
-  border: solid;
-  border-color: white;
-  color: white;
-  background-color: Transparent;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.gallery .btn2:hover {
-  background-color: #262626;
-  color: white;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.resize-drag {
-  color: white;
-  width: 150px;
-  height: 150px;
-  min-width: 150px;
-  min-height: 150px;
-  box-sizing: border-box;
-  box-shadow: 5px 5px 5px #3d3d3d;
-  position:absolute;
-}
-
-#title{
-  /*padding: 250px;*/
-  font-family: 'Pathway Gothic One', ;
-  font-size: 4vw;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#intro{
-  font-family: 'Pathway Gothic One', ;
-  font-size: 3vw;
-  text-align: center;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-p {
-  text-align: justify;
-  font-family: 'Pathway Gothic One', ;
-}
-
-.img_gallery {
-  width: 100%;
-  touch-action: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.resize-container{
-padding: 5px;
-width: 150px;
-height: 150px;
-margin-top: 10px;
-margin-bottom:30px;
-}
-
-
-</style>
 
 </head>
 
@@ -200,7 +22,7 @@ margin-bottom:30px;
   <div id="title">
     <div id="wrapper">
       Now Try The How And Why
-      <img src="divider.jpg" class="center img-responsive">
+      <img id="divider" src="divider.jpg" class="center img-responsive">
     </div>
     </div>
 </section>
@@ -225,7 +47,7 @@ margin-bottom:30px;
           </p>
         </div>
       </div>
-          <img src="divider.jpg" class="center img-responsive">
+          <img id="divider" src="divider.jpg" class="center img-responsive">
   </div>
     </div>
 
@@ -243,16 +65,23 @@ margin-bottom:30px;
     <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
+        <h3>Instructions for participants</h3>
         <span class="close">&times;</span>
-        <h2>Modal Header</h2>
       </div>
       <div class="modal-body">
-        <p>Some text in the Modal Body</p>
-        <p>Some other text...</p>
-      </div>
-      <div class="modal-footer">
-        <h3>Modal Footer</h3>
-      </div>
+<h5>Welcome to the Now Try the How and Why. </h5>
+  <p>This interactive curatorial experience, in which you the participant are encouraged to curate your own exhibition based on your experiences and emotions towards these non-representational artworks. To begin click to the next screen on your device.
+
+      I encourage you to look through all the artworks in the gallery thoughtfully, and discern meanings towards the artworks, with there being no wrong responses towards the meaning of each piece. When you begin viewing the exhibition take a look through the entire gallery and start to access each artwork. If you are not sure where to begin the next sentences will help you when looking at the works.
+
+      When people observe art there are many ways that one can discern a feeling or emotional response from the image. Often, the ways that people consider meanings of works are through colour (example: how does red make you feel versus blue), through brushstrokes and shapes or space in the image picture plane.
+
+      Take the time to look through the entire gallery of images, and evaluate each one. What do you see in each image based on the information you have seen from the formal elements of the artworks and what they mean to you?
+
+      After you have reflected on the artworks that stick out to you, select the artworks that generate similar emotions or experiences to you and select them into the gallery. Once they are in the gallery space you can move the images around and adjust the sizing of the images.
+
+      Once you are happy with your curation, if you would like to share your work on social media, or express them in the guestbook with the emotion or theme the work made you reflect on.
+    <p>  </div>
     </div>
 
   </div>
@@ -279,8 +108,6 @@ margin-bottom:30px;
     <li class="resize-container">
       <img src="7.jpg" class="resize-drag">
     </li>
-  </ul>
-    <ul class="img_gallery">
     <li class="resize-container">
       <img src="8.jpg" class="resize-drag">
     </li>
@@ -344,10 +171,6 @@ var btn = document.getElementsByClassName("btn1")[0];
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-console.log(modal);
-console.log(btn);
-console.log(span);
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
