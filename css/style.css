@@ -46,7 +46,22 @@ text-align: center;
 background-color: #262626;
 color: white;
 }
+.btn3 {
+  font-size: 16px;
+  padding: 6px 12px;
+  border: solid;
+  border-color: #262626;
+  color: #262626;
+  background-color: Transparent;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+}
 
+.btn3:hover {
+  background-color: #262626;
+  color: white;
+}
 /* The Modal (background) */
 .modal {
 display: none; /* Hidden by default */
@@ -220,7 +235,22 @@ margin-bottom:30px;
     background-color: #262626;
     color: white;
   }
+  .btn3 {
+    font-size: 16px;
+    padding: 6px 12px;
+    border: solid;
+    border-color: #262626;
+    color: #262626;
+    background-color: Transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+  }
 
+.btn3:hover {
+    background-color: #262626;
+    color: white;
+  }
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
@@ -400,6 +430,22 @@ margin-bottom:30px;
     color: white;
   }
 
+  .btn3 {
+    font-size: 16px;
+    padding: 6px 12px;
+    border: solid;
+    border-color: #262626;
+    color: #262626;
+    background-color: Transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .btn3:hover {
+    background-color: #262626;
+    color: white;
+  }
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
@@ -576,7 +622,22 @@ margin-bottom:30px;
   background-color: #262626;
   color: white;
 }
+.btn3 {
+  font-size: 16px;
+  padding: 6px 12px;
+  border: solid;
+  border-color: #262626;
+  color: #262626;
+  background-color: Transparent;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+}
 
+.btn3:hover {
+  background-color: #262626;
+  color: white;
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -752,7 +813,22 @@ text-align: center;
 background-color: #262626;
 color: white;
 }
+.btn3 {
+  font-size: 16px;
+  padding: 6px 12px;
+  border: solid;
+  border-color: #262626;
+  color: #262626;
+  background-color: Transparent;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+}
 
+.btn3:hover {
+  background-color: #262626;
+  color: white;
+}
 /* The Modal (background) */
 .modal {
 display: none; /* Hidden by default */
@@ -876,4 +952,12 @@ margin-top: 10px;
 margin-bottom:30px;
 }
 
+}
+
+
+
+.patty-center-amazing-magic {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
 }
